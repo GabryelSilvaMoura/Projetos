@@ -2,7 +2,7 @@
 var radio = document.querySelector('.nav-dot')
 var cont = 1
 
-document.getElementById('img-dot-1') = true;
+document.querySelector('#img-dot-1').checked = true
 
 setInterval(() => {
     proximaImg()
@@ -14,5 +14,5 @@ function proximaImg(){
     if(cont > 3){
         cont = 1
     }
-    document.getElementById('radio'+cont).checked = true;
+    document.getElementById('radio'+cont).checked = true
 }
