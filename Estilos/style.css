@@ -1,1 +1,98 @@
 /* CSS base para a página */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.chivo-uniquifier {
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oswald-uniquifier {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Estilo Geral da Página */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+}
+
+/* Estilo do Botão */
+#but{
+    background-color: rgb(255, 152, 16);
+    padding: 20px;
+    
+    position: absolute;
+    border: none; 
+    right: 20px;
+    bottom: 30px;
+    transition: ease 0.8s;
+}
+
+#but > a{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#but > a i{
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#but:hover{
+    background-color: rgb(253, 171, 65);
+}
+
+/* Estilo do Cabecalho */
+header{
+    padding: 20px;
+    border-bottom: 3px solid #dee2e6c0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header > menu{
+   background-color: transparent;
+}
+
+header > menu > ul{
+    display: flex;
+}
+
+header > menu > ul li{
+    list-style-type: none;
+    padding: 10px 50px;
+}
+
+header > menu > ul li a{
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+header h1, a{
+    color: white;
+}
+
+header > menu > ul li:hover{
+    background-color: rgba(230, 137, 15, 0.884);
+    text-decoration: underline;
+}
+
+
+/* Estilo do Conteudo Principal */
